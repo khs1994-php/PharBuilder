@@ -1,5 +1,5 @@
 {
-  "name": "macfja/phar-builder",
+  "name": "khs1994/phar-builder",
   "license": "MIT",
   "require": {
     "php": "~7.1",
