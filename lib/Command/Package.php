@@ -65,5 +65,7 @@ HELP
         $runner = new Runner($options, new AllFilesCompression(), $composer);
         $runner->setEmitter($this->getEmitter());
         $runner->execute();
+
+        return 0;
     }
 }
