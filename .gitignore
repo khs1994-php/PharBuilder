@@ -2,7 +2,7 @@
 ### Composer template
 composer.phar
 /vendor/
-
+composer.lock
 phar-builder.phar
 infection-log.txt
 /build/
