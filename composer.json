@@ -2,20 +2,27 @@
   "name": "khs1994/phar-builder",
   "license": "MIT",
   "require": {
-    "php": "~7.1",
+    "php": "^7.1 || ^8.0",
     "symfony/console": "^4.1 || ^5.0",
     "league/event": "^2.1",
     "webignition/readable-duration": "^2.0",
-    "gugglegum/memory-size": "^1.0",
-    "ext-json": "*"
+    "ext-json": "*",
+    "nicmart/string-template": "0.1.1",
+    "gugglegum/memory-size": "1.0.1"
   },
   "autoload": {
     "psr-4": {
-      "MacFJA\\PharBuilder\\": "lib/"
+      "MacFJA\\PharBuilder\\": "lib/",
+      "gugglegum\\MemorySize\\": "bundle/gugglegum/memory-size/src/"
     },
     "psr-0": {
-      "StringTemplate": "nicmart/string-template/src"
+      "StringTemplate": "bundle/nicmart/string-template/src/"
     }
+  },
+  "replace": {
+    "nicmart/string-template": "0.1.1",
+    "gugglegum/memory-size": "1.0.1",
+    "macfja/phar-builder": "self.version"
   },
   "autoload-dev": {
     "psr-4": {
